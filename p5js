@@ -1,7 +1,23 @@
+let boardsize = 400;
+let sqCount = 10.5;
+let color1 = "#FF69B4";
+let color2 = "#000000";
+let sqSize = boardsize/sqCount;
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(boardsize, boardsize);
 }
 
 function draw() {
   background(220);
+  for (let row = 0; row < sqCount; row++) {
+    //create row of squares
+    for (let col = 0; col < sqCount; col++) {
+      if ((row+col)%2 == 0)
+        fill(color1);
+      else
+        fill(color2);
+      square(col*sqSize,row*sqSize,sqSize);
+    }
+  }
+  
 }
