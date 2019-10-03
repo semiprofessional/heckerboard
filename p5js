@@ -1,1 +1,7 @@
-https://editor.p5js.org/semiprofessional/sketches/jwu6nyRI1 
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+}
